@@ -1,0 +1,33 @@
+.block
+    margin-bottom $default
+    width 100%
+    position relative
+    
+    // h5
+    //  	background-color twenty
+    a
+    	text-decoration none
+	.block--hero
+		margin-bottom $default * 2
+/**
+	M I N - W I D T H : 768px equal to Tablet portrait
+**/
+@media (min-width : 48.000em)
+	.block--hero
+		&.home
+			padding-bottom 111px
+
+/**
+	M I N - W I D T H : 1025px equal Tablet lanscape to Desktop
+**/
+@media (min-width : 64.063em)
+	.block--hero
+		margin-bottom 0
+		&.home
+			//height auto//672px//572px
+			padding 0
+			margin-bottom $default
+			
+			.carousel
+				top -168px
+				margin-bottom -30px

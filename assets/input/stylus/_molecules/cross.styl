@@ -1,0 +1,25 @@
+.block--mixed
+	padding $default 0
+.block--mixed-item
+	width 100%
+	float left
+	
+	&:first-child
+		//margin-right 2%
+		margin-bottom $default
+	p
+		margin-bottom 0
+.block--mixed-img
+	width 100%
+	height auto
+
+.block--mixed_button
+	margin-top $default
+	width 100%
+	font-size 80%
+
+@media (min-width : 48.000em)
+	.block--mixed-item
+		width 49%
+		&:first-child
+			margin-right 1%

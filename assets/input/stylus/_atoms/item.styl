@@ -1,0 +1,28 @@
+.item
+	width 100%
+	margin-bottom $default
+	background-color blanco
+
+.item--gallery
+	margin-bottom $default * 2
+	display block
+	position relative
+	&:after
+		content '\e022'
+		width 100%
+		height 100%
+		display block
+		opacity 0
+		position absolute
+		left 0
+		top 0
+		text-align center
+		line-height 162px
+		background-color rgba(0,0,0,0.6)
+		transition opacity 0.400s ease
+		color blanco
+		font-family 'iconexx'
+		font-size 150%
+	&:hover
+		&:after
+			opacity 1

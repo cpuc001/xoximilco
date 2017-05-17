@@ -1,0 +1,55 @@
+.savings
+	width 100%
+	background-color $bColor_saves
+	color $cColor_saves
+	font-family 'Source Sans Pro', sans-serif
+	.flex--wrap
+		flex-direction row
+	h5
+		margin 0
+		color inherit
+		background-color inherit
+	
+	&.saving--inline
+		margin-bottom 0
+		font-size 90%
+		span
+		p
+			// font-size 80%
+			margin-bottom -5px
+		
+		.savings--item
+			border 0 none
+			padding-left $default
+			padding-top $default
+			padding-bottom $default
+		.title
+			font-size 210%
+			margin-right $default
+			line-height 40px
+	&.savings--tab
+		.savings--item
+			height $dHeight
+			cursor pointer
+				
+.savings--header
+	border-bottom $dBorder
+	border-color blanco
+	padding $default
+
+.savings--item
+	border-left $dBorder
+	border-color blanco
+	color inherit
+	list-style-type none
+	&:first-child
+		border-left 0 none
+	.dropdown-menu
+		background-color  darken($bColor_saves, 30%)
+		padding $default
+		width 100%
+		margin-top 0
+
+aside
+	.savings
+		margin-bottom $default

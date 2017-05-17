@@ -1,0 +1,49 @@
+//
+// M S I . S T Y L
+// D I S C O U N T C A R D S . V O L T
+//
+.block--msi
+	border-top 1px solid gris-oscuro
+	border-bottom 1px solid gris-oscuro
+	margin-bottom 48px
+
+	a
+		color blanco
+		text-decoration none
+		
+	.flex--item
+		position relative
+		align-self center
+		// &:nth-of-type(1)
+		// 	flex-basis 30%
+		
+	h4
+		margin-bottom 0
+		font-weight 700
+		line-height 40px
+		span
+			font-size 130%
+	p
+		margin-bottom 0
+		color gris-oscuro
+
+.meses-intereses
+	color fifth
+/**
+// 9 9 0 p x
+**/
+@media (min-width : 61.875em)
+	.block--msi
+		.flex--item:nth-of-type(1)
+			flex-basis 30%
+			&:after
+				background-color gris-oscuro
+				bottom 0
+				content ''
+				display block
+				height 50px
+				margin auto
+				position absolute
+				right 0
+				top 0
+				width 1px

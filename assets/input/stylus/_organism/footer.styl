@@ -1,0 +1,115 @@
+.schema-footer
+  opacity 0.3
+  font-size 1.3rem
+.border
+  background-size 33px 16px
+  background-repeat right
+  background-position center top
+  min-height 16px
+.pleca_1
+  background-image url('/img/border.png')
+.pleca_2
+  background-image url('/img/border_2.png')
+  background-color $bColor_Footer
+
+.upperfooter
+  background-color $bColor_Footer
+  padding $default
+.bottomfooter
+  background-color $bColor_BottomFooter
+  padding $default
+footer
+	color blanco
+	position  relative
+	margin-top $default
+
+
+	.container
+		padding 0
+	
+
+	.flex--wrap
+		flex-direction row
+
+	.social
+		margin 0 auto
+
+	.nav-icon
+		font-size 3rem
+		
+	h5
+		color primary
+
+	p
+		color blanco
+	
+	.phones
+		li:not(:first-child)
+			@extend button, .button--block, .button-ghost
+			margin-right $default
+.parks
+	display flex
+	width 100%
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	margin 0 auto
+	align-content flex-start
+	position relative
+.parks--logo
+	//flex-basis 50%
+	//flex-grow 1
+	padding $default
+	align-self center
+	flex 1 0 8em
+	//min-height 30px
+	//line-height 30px
+	.lazy
+		&:before
+			padding-top 29.06%
+	img
+		margin 0 auto
+	&:first-child
+		flex-basis 100%
+		max-width 100%
+		.lazy
+			margin 0 auto
+			img
+				right 0
+			&:before
+				padding-top 12.17%
+	&:last-child
+		max-width 13em
+/**
+	M I N - W I D T H :  7 6 8 p x
+**/
+@media (min-width :  48.000em)
+	.parks--logo
+		&:first-child
+			.lazy
+				&:before
+					padding-top 5.17%
+
+	.phones
+		li:first-child
+			width 100%
+	// footer
+	// 	.flex--wrap
+	// 		flex-direction row
+			
+@media (min-width : 61.875em)
+	footer
+		.accordion-header
+			display none
+	.parks--logo
+		//max-width 25%
+		//flex-basis 14em
+		&:first-child
+			img
+				max-width 35%
+/**
+	M I N - W I D T H : 1025px equal Tablet lanscape to Desktop
+**/
+//@media (min-width : 64.063em)
+
+	

@@ -1,0 +1,191 @@
+//Block button +efault
+button = @block {
+	padding 0 0.938rem
+	color slateGrey unless color
+	//letter-spacing 0.1rem
+	margin 0
+	background-color transparent
+	border 0 none
+	font-size 1.6rem
+	text-align center
+	text-decoration none
+	-webkit-appearance none
+}
+
+button
+.button
+	{button}
+	&:focus
+		outline 0 none
+
+	&.absolute
+		border-radius 50%
+		width 60px
+		height 60px
+		position absolute
+		left 0
+		bottom -30px
+		right 0
+		margin-left auto
+		margin-right auto
+		margin-bottom 0
+		z-index 100
+		line-height 66px
+		i
+			font-size 150%
+.button--block
+	{button}
+	background-color transparent unless background-color
+	border-radius 0.313em
+	height 4.8rem
+	line-height 5.100rem
+	width 100%
+	display inline-block
+	margin-bottom 20px
+	//min-width 5em
+	//width 100%
+	transition background-color 0.150s ease-in
+	&:hover
+	&:focus
+		border-color inherit
+.button--inline
+	{button}
+	color primary
+	font-style italic
+	text-transform none
+	&:hover
+	&:focus
+		color darken(@color, 50%)
+	
+.button-first,
+input[type="button"].button-first,
+input[type="submit"].button-first
+	background-color $bColor_ButtonPrimary
+	color $cColor_ButtonPrimary
+	margin-bottom 55px
+	&:hover
+	&:focus
+		background-color darken($bColor_ButtonPrimary, 30%)
+		color $cColor_ButtonPrimary
+.button-first-pay
+input[type="button"].button-first-pay,
+input[type="submit"].button-first-pay
+	background-color rojo-cesar
+	color blanco
+	text-transform uppercase
+	&:hover
+	&:focus
+		background-color darken(rojo-cesar, 30%)
+		color blanco
+	&:disabled
+		background-color rojo-cesar-disabled
+.button-second
+	background-color primary
+	color blanco
+	margin-bottom 55px
+	&:hover
+	&:focus
+		background-color darken(primary, 30%)
+input[type=submit].button-ghost
+.button-ghost
+	color blanco
+	border-style solid
+	background-color quinary
+	&:hover
+	&:focus
+		background-color darken(quinary, 30%)
+
+.button-third
+	background-color sixth
+	color blanco
+	margin-bottom 8px
+	&:hover
+	&:focus
+		background-color darken(sixth, 30%)
+
+.button-info
+	background-color blueinfo
+	color blanco
+	margin-bottom 8px
+	&:hover
+	&:focus
+		background-color darken(blueinfo, 30%)
+	
+// input[type=submit].button-ghost
+// .button-ghost
+// 	border-width 1px
+// 	border-style solid
+// 	background-color transparent
+// 	border-color $bColor_ButtonTertiary
+// 	color $cColor_ButtonTertiary
+// 	&:hover
+// 	&:focus
+// 		border-color $bColor_ButtonTertiary
+// 		color darken($cColor_ButtonTertiary, 30%)	
+
+.button--group
+	margin-bottom $default
+	position relative
+	width 100%
+	.button
+		width 100%
+		//float left
+		margin-bottom $default
+
+	&.button--group-nav
+		.button
+			width 100%
+
+	&.button--group-slider
+		.button
+			width 100%
+			float left
+			border-radius 0 0 $dBorderRadious $dBorderRadious
+			margin 0
+
+.button--square
+	width 100%
+	height 100%
+	line-height 50%
+	color blanco
+	display block
+	line-height 23px
+
+.button-icon
+	color blanco
+	i
+		color inherit
+		display inline-block
+		font-size 2.5rem
+			
+
+input[type=button],
+input[type=submit]
+	{button}
+	@extend .button--block
+
+aside
+	.button--block
+		width 100%
+
+/**
+	9 9 0 p x
+**/
+@media (min-width : 61.875em)
+	.button--block
+		width auto
+	.button--group
+		margin-bottom $default
+		position relative
+		width 100%
+		float left
+		margin-bottom $default
+		.button
+			width 48%
+			margin-bottom 0			
+			// &:first-child
+			// 	margin-right 2%
+		&.button--group-nav
+			.button
+				width auto
+		

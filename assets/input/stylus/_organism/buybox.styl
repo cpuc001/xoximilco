@@ -1,0 +1,77 @@
+.buybox
+	border 0 none
+	background-color twenty
+	z-index 50
+	width 100%
+.buybox--block
+	padding 0 $default
+	margin-bottom $default
+	margin-top $default
+	&.affix
+		box-shadow 0 15px 15px grayShadow
+	.flex--wrap
+		flex-direction row
+		margin-bottom $default
+		.flex--item
+			margin-bottom $default
+			&:nth-of-type(1)
+				flex-basis 100%
+				flex-grow 2
+			&:nth-of-type(2)
+				flex-basis 1%
+			&:nth-of-type(3)
+				select
+					max-width 99%
+			&:nth-of-type(4)
+				flex-basis 100%
+				flex-grow 2
+			select
+				max-width 98%
+	label
+		font-weight 400
+	input
+		margin-bottom 0
+
+	.button--block
+		width 100%
+	hr
+		margin $default 0
+		width 100%
+.datepicker
+	position relative
+
+.input-group-addon
+	background-color primary
+	border-radius 0 5px 5px 0
+	color blanco
+	display block
+	font-size 2.5rem
+	height 100%
+	position absolute
+	right 0
+	text-align center
+	top 0
+	width 40px
+	z-index 1
+
+.date
+	position relative
+	z-index 10
+
+.variants
+	margin-bottom $default
+
+/**
+	M I N - W I D T H :  7 6 8 p x
+**/
+@media (min-width :  48.000em)
+	.buybox--block
+		.flex--wrap
+			flex-direction row
+/**
+	M I N - W I D T H : 990px equal Tablet lanscape to Desktop
+**/
+@media (min-width : 61.875em)
+	
+	.buybox
+		max-width 331px

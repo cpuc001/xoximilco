@@ -1,0 +1,218 @@
+.input-container
+	//width //100%
+	text-align center
+	padding-top 5px
+	position: relative
+	*,*:before,*:after
+		transition .25s ease-in-out
+.ios-toggle,
+.ios-toggle:active
+	position absolute
+	top 0
+	height 0
+	width 0
+	opacity 0
+	border none
+	outline none
+
+.checkbox-label
+	display inline-block
+	position relative
+	padding 10px
+	font-size 12px
+	line-height 0
+	font-weight 400
+	width 60px
+	//min-width 40px
+	height 30px
+	border-radius 18px
+	background baliHai
+	cursor pointer
+	margin-bottom 0
+	
+	&:before
+		content '\e027'
+		display block
+		position absolute
+		z-index 1
+		line-height 30px
+		//text-indent 40px
+		height 30px
+		width 30px
+		border-radius 100%
+		top 0px
+		left 0px
+		right auto
+		background blanco
+		box-shadow 0 3px 3px rgba(0,0,0,.2),0 0 0 2px baliHai
+		font-family 'iconexx'
+		text-align center
+		color baliHai
+		font-size 2.500rem
+		-webkit-font-smoothing antialiased
+		
+
+.off
+	color baliHai
+	left 0
+	position absolute
+	i
+		&:before
+			font-size 3rem
+.on
+	color baliHai
+	position absolute
+	right 0
+	i
+		&:before
+			font-size 3rem
+
+.ios-toggle:checked + .checkbox-label
+	box-shadow inset 0 0 0 20px online,0 0 0 2px online
+
+.ios-toggle:checked + .checkbox-label:before
+	left calc(100% - 30px)
+	box-shadow 0 0 0 2px transparent,0 3px 3px rgba(0,0,0,.3)
+	color online
+
+#checkbox1 + .checkbox-label
+	box-shadow inset 0 0 0 0px online,0 0 0 2px #dddddd
+#checkbox1:checked + .checkbox-label
+	box-shadow inset 0 0 0 18px online,0 0 0 2px online
+// #checkbox1:checked + .checkbox-label:after
+// 	color online
+
+.booking
+	background-color blanco
+	max-width 990px
+	z-index 50
+	
+	.trans-label
+		color online
+
+	.nav--tab
+		
+		.nav-tab--item
+			max-width 50%
+	.left
+		padding $default
+
+		.flexie
+			> div
+				margin-bottom $default
+			
+			.flex--wrap
+				flex-direction column
+			
+			.flex--item
+				margin-bottom $default
+	.right
+		font-size 130%
+
+	.tab--container
+		.nav--tab
+			.nav-tab--item
+				border 0 none
+	
+	.tab--content
+		> .tab-pane
+			border 0 none
+/*
+	M I N - W I D T H : 768px equal to Tablet portrait
+*/
+@media (min-width : 48.000em)
+	.home
+		.booking
+			position absolute
+			left 0
+			right 0
+			margin auto
+			bottom 106px
+			.left
+			.right
+				float left
+			.left
+				width 70%
+				padding 0 $default 0 0
+				.flexie
+					display flex
+					justify-content center
+					align-items stretch
+					//padding-left $default
+					.flex--wrap
+						flex-direction row
+					> div
+						flex 1
+						align-self center
+						
+						padding-top $default
+						position relative
+
+						&:nth-of-type(2)
+							flex-grow 2
+							padding-left 0
+						.flex--item
+							padding-left $default
+							
+							&:nth-of-type(1)
+								padding-left 0
+						&:nth-of-type(3)
+							padding-left $default
+			.right
+				width: 30%
+				background-color online
+				color blanco
+				padding 0 $default
+				//min-height 102px
+				//line-height 76px
+				font-size 65%
+				
+				.amount--online
+					color inherit
+					font-size 200%
+			.tab--container
+				position absolute
+				top -2.500em
+				left 0
+				width 50%
+				
+				.nav--tab
+					
+					.nav-tab--item
+						border 0 none
+						height 2.500em
+						
+						a
+							line-height 2.500em
+			
+			.tab--content
+				> .tab-pane
+					padding 0
+					width 100%
+					border 0 none
+
+/*
+	M I N - W I D T H : 990px equal to Tablet portrait
+*/
+@media (min-width : 61.875em)
+	.home
+		.booking
+			.right
+				font-size 85%
+	aside
+		.booking
+			margin-bottom 0
+			.flex--wrap
+				flex-direction row !important
+				.flex--item
+					margin-bottom $default
+					&:nth-of-type(1)
+						flex-basis 100%
+						flex-grow 2
+					&:nth-of-type(2)
+					&:nth-of-type(3)
+						select
+							max-width 99%
+					&:nth-of-type(4)
+						flex-basis 100%
+						flex-grow 2

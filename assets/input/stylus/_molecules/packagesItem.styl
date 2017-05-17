@@ -1,0 +1,42 @@
+.item__package
+	border $cBorder_item
+	border-radius $dBorderRadious
+	padding $default
+	transition box-shadow 0.250s ease-in
+	background-color $bColor_item
+	&:hover
+	&:focus
+		box-shadow 0 30px 15px -20px grayShadow
+	.flex--wrap
+		flex-flow row wrap
+	.button
+		width 100%
+	.item__package-header
+		p + p
+			display none
+	.item__package-img
+		margin-bottom $default
+		.button
+			margin-top $default
+	
+	.flex--item
+		align-self center
+		flex-basis 100%
+
+@media (min-width : 48.000em)
+	.item__package
+		padding $default 0
+		.flex--wrap
+			flex-direction row
+		.flex--item
+			align-self flex-start
+			padding 0 $default
+			flex-basis 33.33%
+			&:nth-of-type(1n)
+				order 2
+			&:nth-of-type(2n)
+				order 1
+	
+		.item__package-header
+			p + p
+				display block

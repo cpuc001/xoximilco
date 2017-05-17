@@ -1,0 +1,43 @@
+.form
+	@extend .no-margin
+	border 1px solid grisBorder
+	padding 0.938em
+	width 100%
+
+input[type="text"]
+input[type="number"]
+input[type="search"]
+input[type="email"]
+select
+	width 100%
+	border $dBorder
+	height 2.500em
+	//color inherit
+	margin 0
+	font-size 1.6rem
+	&:hover
+	&:focus
+		border-color inherit
+label
+	display inline-block
+
+input[type=checkbox]
+	margin 0
+
+input
+	&:last-child
+		margin-bottom $default
+
+//
+// M A P S  D I R E C T I O N S
+// 
+	input[type="text"].controls
+		top 1em !important
+		margin 0 auto
+		right 1em
+		width 80%
+		position absolute
+	
+	.gm-style-iw
+		max-width 160px !important
+		//.Xcaret		

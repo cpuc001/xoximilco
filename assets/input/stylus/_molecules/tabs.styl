@@ -1,0 +1,56 @@
+// .tabs
+// 	display block
+// 	margin $default 0
+// 	overflow hidden
+// .tabs--item
+// 	border 1px solid trout
+// 	border-left 0 none
+// 	float left
+// 	text-align center
+// 	height $dHeight
+// 	line-height $dHeight
+	
+// 	&:first-child
+// 		border-left 1px solid trout
+// .tabs[data-items="2"]
+// 	.tabs--item
+// 		width 50%
+	
+
+.nav--tab
+	width 100%
+	display flex
+	flex-direction row
+	margin-bottom 0
+	.nav-tab--item
+		align-self center
+		border 1px solid quinary
+		flex 1 0 auto
+		height $dHeight
+		border-right 0 none
+		background-color blueinfo
+		transition color .15s linear
+		max-width 33.33%
+		color blanco
+		a
+			line-height $dHeight
+			text-transform uppercase
+			text-overflow ellipsis
+			overflow hidden
+		&:last-child
+			border-right 1px solid quinary
+		&.active
+			border-bottom 0 none
+			background-color darken(blueinfo, 10%)
+
+.tab--content
+	
+	> .tab-pane
+		display none
+		background-color twentieth
+		padding $default
+		border 1px solid quinary
+		border-top 0 none
+		&.active
+			display block
+	

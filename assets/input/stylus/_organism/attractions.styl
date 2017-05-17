@@ -1,0 +1,44 @@
+.block--attractions
+	margin-top ($default * 4)
+
+	.flex--wrap
+		justify-content center
+		align-items center
+		.flex--item
+			padding $default
+			max-height 360px
+			// overflow hidden
+
+.block--attractions-thumb
+	// overflow inherit
+	img
+		transform-origin center center
+		transition transform 0.600s ease-in
+	&:hover
+	&:focus
+		img
+			transform scale(1.1)
+
+/**
+	M I N - W I D T H : 768px equal to Tablet portrait
+**/
+@media (min-width : 48.000em)
+
+	.block--attractions
+		.flex--wrap
+			flex-direction row
+		h3
+			font-size 2.6rem
+		p
+			display block
+		.button
+			font-size 100%
+/**
+	M I N - W I D T H : 1025px equal Tablet lanscape to Desktop
+**/
+@media (min-width : 64.063em)
+
+	.block--attractions
+		h3
+			font-size 3rem
+		

@@ -1,0 +1,64 @@
+.accordion
+	margin $default 0
+	width 100%
+
+.accordion--item
+	width 100%
+	will-change transform
+	&.is_open
+		.accordion-content
+			display block
+	.accordion-header
+		h6
+			color $cColor_accordion
+			font-size 1.6rem
+			font-weight 400
+			//letter-spacing 0.1rem
+			line-height 1.750em
+			text-transform uppercase
+		
+		.icon-mark
+			float left
+			margin-right $default
+.accordion-header
+	background-color senary
+	height 3.125em
+	margin-bottom 1px
+	padding $default
+	
+	h4
+		font-size inherit
+	
+.accordion-content
+	padding $default
+	display none
+
+//
+//	M I N - W I D T H : 768px equal Tablet lanscape to Desktop
+//
+@media (min-width : 48.000em)
+	.accordion--item
+		//pointer-events none
+		.accordion-header
+			background-color transparent
+			margin-bottom $default
+			h6
+				color primary
+				font-size @extend h3
+				
+			i
+				display none
+
+		.accordion-content
+			display block
+
+	main
+		.accordion--item
+			.accordion-header
+				background-color twenty
+
+//	M I N - W I D T H : 1025px equal Tablet lanscape to Desktop
+//
+// @media (min-width : 64.063em)
+// 	// .accordion--item
+// 	// 	pointer-events none

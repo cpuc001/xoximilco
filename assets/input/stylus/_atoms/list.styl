@@ -1,0 +1,42 @@
+.list
+	li
+		margin-bottom $default
+	a
+		text-decoration none
+		color inherit
+	span
+		text-decoration none
+		display inline
+		
+	img
+		display inline
+		vertical-align middle
+	
+	&.list--block
+		li
+			padding $default
+			// &:nth-of-type(odd)
+			// 	background-color darken(quaternary, 10%)
+	
+	&.list-columns
+		li
+			float left
+			margin-right $default
+
+	&.list-bars
+		list-style-type none
+		li:not(:last-child)::after
+			content "|"
+
+.list:not(.list-mobile)
+	ul,ol
+		list-style none
+	li
+		list-style-type none
+		display block
+
+.list-mobile
+	margin-left 2rem
+	margin-right 2rem
+	li
+		font-size 1.4rem

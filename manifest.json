@@ -1,0 +1,58 @@
+{
+  "name": "Xoximilco",
+  "short_name": "XO",
+  "theme_color": "#6d2aaa",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "apple-touch-icon-57x57-precomposed.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-60x60-precomposed.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-72x72-precomposed.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-76x76-precomposed.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-114x114-precomposed.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-120x120-precomposed.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-144x144-precomposed.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-152x152-precomposed.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon-180x180-precomposed.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

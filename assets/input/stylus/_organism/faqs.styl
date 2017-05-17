@@ -1,0 +1,71 @@
+.block--search
+	background-color twenty
+	padding $default $default 0
+.block--faqs
+	//padding $default
+	background-color twenty
+	box-shadow 0 0 15px grayShadow
+	transition box-shadow 0.250s ease-in
+	&:focus
+	&:hover
+		box-shadow 0 30px 15px -20px grayShadow
+.topics
+	background-color blueinfo
+	color blanco
+	li
+		border-bottom $dBorder
+		margin-bottom 0
+		&:hover
+		&:focus
+			background-color darken(blueinfo, 30%)
+		// a
+		// 	display inline-block
+		&:last-child
+			border 0 none
+	
+.preguntas
+	h2
+		display none
+	
+	ul
+		margin-left 0
+		margin-bottom 0
+		.menu-preguntas
+			display none
+			&:nth-of-type(1)
+				display block
+		
+			li
+				&:nth-of-type(odd)
+					background-color blueinfo
+					color blanco
+
+.block--questions
+	.item
+		padding $default
+		background-color twenty
+	
+	h4
+		color primary
+		&:target
+			animation pulse 0.400s 2
+
+
+@keyframes pulse
+	0%
+		background-color baliHai
+
+	100%
+		background-color transparent
+
+.term-list
+	background-color blanco
+	box-shadow 0 30px 15px -20px grayShadow
+	left 0
+	position absolute
+	top calc(2.5em - 4px)
+	width 100%
+	z-index 20
+	padding $default
+	border $dBorder
+	border-top 0 none
